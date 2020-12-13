@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8717E816-BA89-8ECB-4655-6F5A04E93B11" name="Volume">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 20:04:34 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="volume_id" id="5E799227-7E8F-93BB-0825-1F69C5C9A68D">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 21:02:57 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dtype" id="1E80E051-937A-E1B9-6499-89969A410FB4">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 21:03:45 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="date" id="CDDB31A9-C051-6697-27DD-98048EE05086">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 21:04:00 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="radar_id" id="9350CB86-1108-ECF2-1AF6-825890B27C82">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-24 17:56:39 UTC</createdTime>
+<generatorID>43C16B11-9533-C94A-40D1-D7ABB53B748F</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<referedAttribute>946F7076-BBBB-BC16-D8E3-16C59D5BADD8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="scan_id" id="50F7369B-B3A7-5576-5B7C-11CB444A24CC">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-24 17:57:31 UTC</createdTime>
+<generatorID>BEC8F5ED-14D3-3BD0-9C4A-A01AA0C24B45</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<referedAttribute>1337D300-C894-2B87-9750-D801761EA6DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="10675D72-F206-B6C3-DC6D-3106A10AF5C0" name="Volume PK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 20:50:31 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5E799227-7E8F-93BB-0825-1F69C5C9A68D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

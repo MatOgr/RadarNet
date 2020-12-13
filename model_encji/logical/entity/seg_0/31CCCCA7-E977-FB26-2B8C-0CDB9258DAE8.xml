@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="31CCCCA7-E977-FB26-2B8C-0CDB9258DAE8" name="Network">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 20:04:14 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="network_id" id="6D6E1B4B-E7C2-CF2E-4561-BBDD693F50B1">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 20:15:20 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="F6617C72-177A-E354-7084-3DD905A25030">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 20:27:18 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="organisation_id" id="83323C74-1F86-3D7E-201C-716FDA901FFC">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-24 17:54:45 UTC</createdTime>
+<generatorID>1C20FB5E-3794-342F-DDBD-9C6BA190D1C7</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<referedAttribute>BA64F5B1-A9B7-4FF6-B8D5-BEEFA28D758C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="250387CF-4F35-614A-B0F9-3213A1AD8F07" name="Network PK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 20:15:41 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<engineerTo>
+<item key="A0675607-34A8-0ECD-98DE-863777DD5B56" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>6D6E1B4B-E7C2-CF2E-4561-BBDD693F50B1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

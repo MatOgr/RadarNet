@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="ABF9E21B-078D-7154-5C6F-D6682E8BFBC3" mainViewID="10F621AC-8AB3-0443-85FC-DCFF72854ED0">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 20:00:22 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>
