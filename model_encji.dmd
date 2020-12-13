@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="model_encji" id="9DE48C0E-49C9-1B52-6BED-40E3828BCBA0" version="3.5">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-11-22 20:00:22 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>9DE48C0E-49C9-1B52-6BED-40E3828BCBA0</designId>
+</OSDM_Design>
