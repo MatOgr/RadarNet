@@ -94,10 +94,10 @@
 <createdTime>2020-12-13 20:55:54 UTC</createdTime>
 <ownerDesignName>model_encji</ownerDesignName>
 <constraintName>CH_INH_Product</constraintName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
-<logicalDatatype>LOGDT024</logicalDatatype>
-<dataTypeSize>6</dataTypeSize>
+<logicalDatatype>LOGDT021</logicalDatatype>
 <listOfValues>
 <valueDef value="3D" description="entity 3D"/>
 <valueDef value="CAPPI" description="entity CAPPI"/>
@@ -106,9 +106,76 @@
 <valueDef value="PPI" description="entity PPI"/>
 <valueDef value="VIL" description="entity VIL"/>
 </listOfValues>
-<ownDataTypeParameters>6,,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <isDiscriminatorColumn>true</isDiscriminatorColumn>
+</Column>
+<Column name="hmax" id="E02725DE-4677-977C-1ADB-47FAB73C2D16">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 22:25:46 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zr_relation" id="79766DE3-2690-F74E-134D-A60726829388">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 22:25:46 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="height" id="A8E2F33A-FA64-786B-8115-8DEF5B101ABA">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 22:25:46 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="r_min" id="0D1BF149-7E35-206A-7A21-665E50686049">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 22:25:46 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="r_max" id="DB13E5B2-979A-FF7C-E469-662E046A39C2">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 22:25:46 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="posangle" id="E590A8C8-6FAE-9AA5-8B6D-4E6696915AF5">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 22:25:46 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">

@@ -91,6 +91,42 @@
 <ownDataTypeParameters>255,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
+<Column name="Relation_33_User_user_id" id="AB754285-3467-E207-8616-175D5703DBD4">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 22:41:48 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Relation_33_Composite_composite_id" id="F83CD245-4F33-43C0-C88E-9EAD3ADA8316">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 22:41:48 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Composite_composite_id" id="56B72596-00D0-2588-6B1F-3D14E876A559">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 22:43:28 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A1D2B5BF-4D68-5C32-A30B-515FF624F9C7" referredColumn="752EC7C1-B0BE-EF5A-A35F-589ECF371B74"/>
+</associations>
+</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="4B77A096-BA31-2BD8-C1CF-3C114A927A15" name="User_PK">
@@ -103,6 +139,17 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="B30CBA64-3076-3466-A447-FA625B886CAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0995B188-28B9-7621-B2AC-FC981529FB7D" name="User_Composite_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 22:43:28 UTC</createdTime>
+<generatorID>6A99820F-BCDE-F8C1-6116-6BD0ABD5FFC3</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56B72596-00D0-2588-6B1F-3D14E876A559"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
