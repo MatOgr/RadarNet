@@ -1,0 +1,192 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="208E6B03-55BC-0794-06F6-27BE7469D2E7" name="Scan">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>26490D17-A12C-9CA3-C3C5-FB41E4AB0A8D</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="scan_id" id="35FA2775-CE92-06BE-4B59-B07280514487">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>1337D300-C894-2B87-9750-D801761EA6DC</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="range" id="D3461E0F-D552-915B-CC9D-650D698A1C3B">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>6C60A15D-FD09-E559-F2C3-D0387E3F9876</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="lowprf" id="55D5C50B-555F-0EAB-51B6-32CD3B264158">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>BBF2268E-1090-6601-24AE-A9848EAEBD12</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="highprf" id="21896AD3-F08C-6A53-E7A6-8DFDDF1E22D1">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>70190EF8-0F0A-BAFD-DAB6-13BA20B38AE9</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dbz_on" id="EA27C316-80CC-0D3B-7711-195215BCAFF0">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>F7A6E204-78A8-BE2A-34AE-85FAD1AA69DB</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dbuz_on" id="3BBA2285-98A4-ADB3-432D-341BC1BB228D">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>8A579D70-CE29-9179-D140-2E76F784BFE0</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="v_on" id="EA6033D2-CC04-3CB6-442E-32AFF090C061">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>FE9A8E3D-2C38-0740-626F-FC37258313D4</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="w_on" id="65C582D1-3600-2ECD-B093-24FCA1B95582">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>CAED1CC3-93CD-9F25-CB01-38C43B9858D1</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rhohv_on" id="AB5D5C7D-6203-6E74-4391-4A2C7C9CA54B">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>A6F3751B-C133-BDE2-43CA-06F6BB4C74ED</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="kdp_on" id="B0EAE6EA-A170-F8DE-706B-F00BA7203F66">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>E4B30799-CC12-4B8B-3767-15F5A9C0F8F5</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phidp_on" id="BCD3764E-68C3-AED7-1D62-D0F964E55609">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>0543DDED-CC65-91E2-80E0-11876CAC7A30</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="zdr_on" id="027D9243-6554-952A-A49F-D9EE0A6A984A">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>26AAE08C-D8EB-8E07-A2A5-E0171130078E</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT006</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Radar_radar_id" id="09C51C31-297D-5199-73D9-D67222ADC765">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>1A00FB5C-74CC-DF2B-ACF6-CB99DCBCA7C9</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0A943033-BA9F-4F5C-87FB-2617D786712E" referredColumn="E59781C8-8CC2-CED0-EC12-7112D74DE2F9"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5969F201-43F4-7261-EBB7-B04FC188D31D" name="Scan_PK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>3A003FA0-E29B-45F2-554A-94AAE448F9FA</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="35FA2775-CE92-06BE-4B59-B07280514487"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66EA8CEB-51ED-8EEE-1D6D-58C22A83F124" name="Scan_Radar_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>4C174B2E-0188-2330-13F5-EF38B554DE42</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="09C51C31-297D-5199-73D9-D67222ADC765"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

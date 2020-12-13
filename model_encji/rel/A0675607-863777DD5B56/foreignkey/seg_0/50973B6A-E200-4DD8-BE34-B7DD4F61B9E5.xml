@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="50973B6A-E200-4DD8-BE34-B7DD4F61B9E5" containerWithKeyObject="CD330F8F-80F6-1CA6-576B-208EEBBD6498" localFKIndex="838181EB-24D1-AB9F-8CE4-FD126DB0D9CB" name="Volume_Scan_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>BEC8F5ED-14D3-3BD0-9C4A-A01AA0C24B45</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<referredTableLongName>Scan</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>208E6B03-55BC-0794-06F6-27BE7469D2E7</referredTableID>
+<keyObject>5969F201-43F4-7261-EBB7-B04FC188D31D</keyObject>
+<referredKeyID>5969F201-43F4-7261-EBB7-B04FC188D31D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>scan_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,73 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A39978C0-1492-B0F9-7C89-2E567D523986" name="3D">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>BC2AF2B3-157D-8FD4-D380-A0845E6D506A</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="99A1A692-B98D-D6F9-919C-15EEFEABB616">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>FEC0636B-A471-7A3A-E43A-7C7F7A908EE7</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C0FB9BE9-E973-785A-199A-C7D67FA5691E" referredColumn="20F9C6FB-140E-4811-5574-50ECD32812E2"/>
+</associations>
+</Column>
+<Column name="hmin" id="EC10F7B9-AD67-1A15-8AF1-5B3646D2EFC6">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>533CDA5C-DE53-1E3C-6828-023A3E21685E</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="hmax" id="19D9FE92-0DDB-F024-2EB4-EF487135A9EB">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>BF93262A-46DF-B7EA-3D22-B8456D017C24</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AAE557B7-65A9-A3A0-F45E-A72CAE384FB1" name="3D_PK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>52D1279F-6A23-E76E-197E-7C49C9E6156A</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99A1A692-B98D-D6F9-919C-15EEFEABB616"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="00656FA7-B0D1-0396-CF1E-FCF7400FBCCD" name="3D_Product_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>20D311B5-C9DC-AA71-91CE-E3696F52C9E8</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="99A1A692-B98D-D6F9-919C-15EEFEABB616"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

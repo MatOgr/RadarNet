@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5998A7FE-D519-ADA6-B873-5107A4E344CC" name="User">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>A51255D6-9876-50B1-8230-CD5532447873</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="user_id" id="B30CBA64-3076-3466-A447-FA625B886CAF">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>355C96C5-3290-B49D-3A5C-603E1ADF6356</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="login" id="40404E97-218A-2ABB-AB64-C0637A359C5F">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>03D08DB8-F24C-FCAE-6504-703D6875E90E</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="password" id="707B3E8C-A3F5-322D-1556-71FE09569C9C">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>6C0D70D3-304C-6E9D-C7D3-65A2BCDE285F</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="fname" id="76CFB3DB-D072-D092-BBF0-674647492819">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>BE7CAE87-4D60-4B45-34E2-A24D882C4C88</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sname" id="4971210D-69F2-EC95-F98E-A1CEFDA90D81">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>909CB0CF-5F4D-DBB4-3B19-432E7240D742</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="registration_date" id="90D0F45F-0C26-B8B1-20E7-61972F0A7513">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>F961336B-005D-4118-165D-146BB7EE0396</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="api_key" id="5C905524-7E74-574D-6DF9-3D8E52F6A64A">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>6C50BEB6-36C5-A9A6-8081-24323FE2EFA5</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4B77A096-BA31-2BD8-C1CF-3C114A927A15" name="User_PK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>60819544-82A8-9255-29EE-FCF2379FC9DD</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B30CBA64-3076-3466-A447-FA625B886CAF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

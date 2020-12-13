@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="96EFEEE5-30C6-85FD-9763-8282B4D92F84" containerWithKeyObject="4EA6E794-C7B5-D25B-4606-CC6B0B72CED0" localFKIndex="2406DB40-6C6B-871A-1749-21559D7094F1" name="Product_Radar_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>A94DB653-D2DA-2E30-AE29-DB0131D30FAC</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<referredTableLongName>Radar</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>25421DCB-BE1D-DEBC-F89E-2EC21660B4E6</referredTableID>
+<keyObject>74753AB7-2475-0D00-2F0E-0732BE43427E</keyObject>
+<referredKeyID>74753AB7-2475-0D00-2F0E-0732BE43427E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>radar_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

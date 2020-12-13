@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E0410A6F-5057-0D70-F286-343923B94C76" name="PPI">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>89C93E81-A2F2-4539-B311-D9F7F566A9B9</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="FC94A678-CB81-90C4-BA3E-55E69F2682C5">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>FEC0636B-A471-7A3A-E43A-7C7F7A908EE7</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8E657913-1957-21D1-5D56-FEF23DD71797" referredColumn="20F9C6FB-140E-4811-5574-50ECD32812E2"/>
+</associations>
+</Column>
+<Column name="posangle" id="B386812D-6635-7DA6-EFF4-5C11A56F4C6E">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>E4FEF8D1-C98D-66CB-684B-6153EE1F37FE</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="435C1678-6C11-CB32-061D-A06BB9E90B0F" name="PPI_PK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>52D1279F-6A23-E76E-197E-7C49C9E6156A</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC94A678-CB81-90C4-BA3E-55E69F2682C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="40C58A08-90FD-CCE4-6FEE-E453C145E980" name="PPI_Product_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>EEC72D49-874D-3329-2E71-D3CBD83B7911</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FC94A678-CB81-90C4-BA3E-55E69F2682C5"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

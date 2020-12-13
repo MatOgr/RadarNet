@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="C8EB073D-62BC-9958-212A-8374392A4D62" containerWithKeyObject="4EA6E794-C7B5-D25B-4606-CC6B0B72CED0" localFKIndex="894BFB42-50E5-5E37-76EF-F35FB7DD3515" name="Product_Composite_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>B826ADE2-8E30-90FE-9233-3C6FE9B99A98</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<referredTableLongName>Composite</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F49813FB-A6A5-F96C-AE69-7EA0B2FE7726</referredTableID>
+<keyObject>21F3CEAD-C74B-9E6A-FFC0-B706C02EFB0B</keyObject>
+<referredKeyID>21F3CEAD-C74B-9E6A-FFC0-B706C02EFB0B</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>composite_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

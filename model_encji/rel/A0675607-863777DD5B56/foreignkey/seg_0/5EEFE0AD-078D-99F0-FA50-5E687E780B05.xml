@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5EEFE0AD-078D-99F0-FA50-5E687E780B05" containerWithKeyObject="4F9ED9C2-23B0-59A9-523C-A993818720BC" localFKIndex="2F72A530-B002-3F58-239B-71479E5D5480" name="Image_Scale_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>BBD5E038-B7E6-5ECC-B1F8-9FC7272EF487</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<referredTableLongName>Scale</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>37D97B72-9F95-48AE-B094-D1406EC02D4C</referredTableID>
+<keyObject>4A01A1C6-A542-5501-1B2C-8EA7C791A831</keyObject>
+<referredKeyID>4A01A1C6-A542-5501-1B2C-8EA7C791A831</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>scale_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

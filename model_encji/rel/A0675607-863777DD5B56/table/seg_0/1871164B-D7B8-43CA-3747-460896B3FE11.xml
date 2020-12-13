@@ -1,0 +1,75 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1871164B-D7B8-43CA-3747-460896B3FE11" name="Relation_34">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Product_product_id" id="9C8720F9-B752-7F60-AA39-280CD0AC524D">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F7CCDDC7-937E-CA3D-E442-792A4222ABE9" referredColumn="20F9C6FB-140E-4811-5574-50ECD32812E2"/>
+</associations>
+</Column>
+<Column name="User_user_id" id="63F2F93E-BB27-4E15-44F1-06E43C160E7F">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C6232114-0525-211B-A335-1FAFF32F8A4D" referredColumn="B30CBA64-3076-3466-A447-FA625B886CAF"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="65D7E9C9-B597-FC95-219B-F081E13B097B" name="Relation_34_PK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<ownerDesignName>model_encji</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C8720F9-B752-7F60-AA39-280CD0AC524D"/>
+<colUsage columnID="63F2F93E-BB27-4E15-44F1-06E43C160E7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="44E59939-B656-0B27-4EAB-AFEEC115C107" name="Relation_34_Product_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>FF9CD0B5-A6A9-5F1B-5260-55A358B4D950</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C8720F9-B752-7F60-AA39-280CD0AC524D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4B967630-EDE2-73FE-701C-EC04735DE146" name="Relation_34_User_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>FF9CD0B5-A6A9-5F1B-5260-55A358B4D950</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="63F2F93E-BB27-4E15-44F1-06E43C160E7F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

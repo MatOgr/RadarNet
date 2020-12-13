@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8854C54-505E-3529-CE68-9FE4F473BCB0" name="CMAX">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>CA32F41F-AD6A-F448-281C-58A210F2E61D</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="product_id" id="E6CDC5E1-34DA-C39C-7EC9-23ED6AF594F4">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>FEC0636B-A471-7A3A-E43A-7C7F7A908EE7</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="19DB7EBD-2C7A-7738-633D-7799296B1872" referredColumn="99A1A692-B98D-D6F9-919C-15EEFEABB616"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="48CC0CD6-E8F1-6EB5-FEA7-80DA154CE398" name="CMAX_PK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>52D1279F-6A23-E76E-197E-7C49C9E6156A</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6CDC5E1-34DA-C39C-7EC9-23ED6AF594F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF11D650-BB0C-5AAC-424F-40277BF0126B" name="CMAX_3D_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>225D38AF-9CB9-AF81-B859-1E1F6F2F817F</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6CDC5E1-34DA-C39C-7EC9-23ED6AF594F4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

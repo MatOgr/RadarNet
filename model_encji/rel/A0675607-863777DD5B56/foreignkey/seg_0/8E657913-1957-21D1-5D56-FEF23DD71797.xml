@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="8E657913-1957-21D1-5D56-FEF23DD71797" containerWithKeyObject="E0410A6F-5057-0D70-F286-343923B94C76" localFKIndex="40C58A08-90FD-CCE4-6FEE-E453C145E980" name="PPI_Product_FK">
+<createdBy>MatJonne</createdBy>
+<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<generatorID>EEC72D49-874D-3329-2E71-D3CBD83B7911</generatorID>
+<ownerDesignName>model_encji</ownerDesignName>
+<referredTableLongName>Product</referredTableLongName>
+<arc>D3886EBF-4D57-34C8-C52A-FCBEEFD601B7</arc>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4EA6E794-C7B5-D25B-4606-CC6B0B72CED0</referredTableID>
+<keyObject>FFCDACA1-7C14-A4E2-E1D3-6D25B1271E42</keyObject>
+<referredKeyID>FFCDACA1-7C14-A4E2-E1D3-6D25B1271E42</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>product_id</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>PPI</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
