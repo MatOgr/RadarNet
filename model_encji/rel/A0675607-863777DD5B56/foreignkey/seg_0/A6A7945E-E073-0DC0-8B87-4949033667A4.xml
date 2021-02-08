@@ -1,15 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="4DCFB1A6-1EEF-A063-6B0D-214285F21142" containerWithKeyObject="F49813FB-A6A5-F96C-AE69-7EA0B2FE7726" localFKIndex="4D112630-2057-E5B7-5D9B-74C6514E05DA" name="Composite_User_FK">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A6A7945E-E073-0DC0-8B87-4949033667A4" containerWithKeyObject="ADC55786-43FD-BCBD-F08B-8134B23C60EE" localFKIndex="74E67122-F500-1588-7BA1-BD737C820631" name="Relation_33_User_FK">
 <createdBy>MatJonne</createdBy>
-<createdTime>2020-12-13 20:55:54 UTC</createdTime>
-<generatorID>9C9344A9-2419-3387-653B-A80F880E4E43</generatorID>
+<createdTime>2020-12-14 23:17:07 UTC</createdTime>
+<generatorID>60819544-82A8-9255-29EE-FCF2379FC9DD</generatorID>
 <ownerDesignName>model_encji</ownerDesignName>
 <referredTableLongName>User</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>5998A7FE-D519-ADA6-B873-5107A4E344CC</referredTableID>
 <keyObject>4B77A096-BA31-2BD8-C1CF-3C114A927A15</keyObject>
 <referredKeyID>4B77A096-BA31-2BD8-C1CF-3C114A927A15</referredKeyID>
-<mandatory>false</mandatory>
+<mandatory>true</mandatory>
 <refColNames>user_id</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>

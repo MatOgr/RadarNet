@@ -1,75 +1,73 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1871164B-D7B8-43CA-3747-460896B3FE11" name="Relation_PRODUCT_USER">
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="ADC55786-43FD-BCBD-F08B-8134B23C60EE" name="Relation_COMPOSITE_USER">
 <createdBy>MatJonne</createdBy>
-<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<createdTime>2020-12-14 23:13:40 UTC</createdTime>
 <ownerDesignName>model_encji</ownerDesignName>
-<ordsAlias>relation_34</ordsAlias>
+<ordsAlias>table_12</ordsAlias>
 <allowColumnReorder>false</allowColumnReorder>
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="Product_product_id" id="9C8720F9-B752-7F60-AA39-280CD0AC524D">
+<Column name="Composite_composite_id" id="8FE1F633-404A-83A6-E140-7BB6F29DF52E">
 <createdBy>MatJonne</createdBy>
-<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<createdTime>2020-12-14 23:14:50 UTC</createdTime>
 <ownerDesignName>model_encji</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="F7CCDDC7-937E-CA3D-E442-792A4222ABE9" referredColumn="20F9C6FB-140E-4811-5574-50ECD32812E2"/>
+<colAssociation fkAssociation="096C0B64-2EA2-72DC-194B-F3E48C118970" referredColumn="752EC7C1-B0BE-EF5A-A35F-589ECF371B74"/>
 </associations>
 </Column>
-<Column name="User_user_id" id="63F2F93E-BB27-4E15-44F1-06E43C160E7F">
+<Column name="User_user_id" id="B2682BC3-1CA5-1BEB-C98D-3314D7B42BB2">
 <createdBy>MatJonne</createdBy>
-<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<createdTime>2020-12-14 23:14:50 UTC</createdTime>
 <ownerDesignName>model_encji</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT011</logicalDatatype>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="C6232114-0525-211B-A335-1FAFF32F8A4D" referredColumn="B30CBA64-3076-3466-A447-FA625B886CAF"/>
+<colAssociation fkAssociation="A6A7945E-E073-0DC0-8B87-4949033667A4" referredColumn="B30CBA64-3076-3466-A447-FA625B886CAF"/>
 </associations>
 </Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
-<ind_PK_UK id="65D7E9C9-B597-FC95-219B-F081E13B097B" name="Relation_34_PK">
+<ind_PK_UK id="FDAAFFC2-32DC-D3FA-5AA2-63820AF620E0" name="Relation_33_PK">
 <createdBy>MatJonne</createdBy>
-<createdTime>2020-12-13 20:55:54 UTC</createdTime>
+<createdTime>2020-12-14 23:14:50 UTC</createdTime>
 <ownerDesignName>model_encji</ownerDesignName>
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9C8720F9-B752-7F60-AA39-280CD0AC524D"/>
-<colUsage columnID="63F2F93E-BB27-4E15-44F1-06E43C160E7F"/>
+<colUsage columnID="8FE1F633-404A-83A6-E140-7BB6F29DF52E"/>
+<colUsage columnID="B2682BC3-1CA5-1BEB-C98D-3314D7B42BB2"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="44E59939-B656-0B27-4EAB-AFEEC115C107" name="Relation_34_Product_FK">
+<ind_PK_UK id="A158B157-E7C1-FAE4-7053-33FFE4F8CD52" name="Relation_33_Composite_FK">
 <createdBy>MatJonne</createdBy>
-<createdTime>2020-12-13 20:55:54 UTC</createdTime>
-<generatorID>FF9CD0B5-A6A9-5F1B-5260-55A358B4D950</generatorID>
+<createdTime>2020-12-14 23:16:48 UTC</createdTime>
+<generatorID>6A99820F-BCDE-F8C1-6116-6BD0ABD5FFC3</generatorID>
 <ownerDesignName>model_encji</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="9C8720F9-B752-7F60-AA39-280CD0AC524D"/>
+<colUsage columnID="8FE1F633-404A-83A6-E140-7BB6F29DF52E"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="4B967630-EDE2-73FE-701C-EC04735DE146" name="Relation_34_User_FK">
+<ind_PK_UK id="74E67122-F500-1588-7BA1-BD737C820631" name="Relation_33_User_FK">
 <createdBy>MatJonne</createdBy>
-<createdTime>2020-12-13 20:55:54 UTC</createdTime>
-<generatorID>FF9CD0B5-A6A9-5F1B-5260-55A358B4D950</generatorID>
+<createdTime>2020-12-14 23:17:07 UTC</createdTime>
+<generatorID>60819544-82A8-9255-29EE-FCF2379FC9DD</generatorID>
 <ownerDesignName>model_encji</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="63F2F93E-BB27-4E15-44F1-06E43C160E7F"/>
+<colUsage columnID="B2682BC3-1CA5-1BEB-C98D-3314D7B42BB2"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

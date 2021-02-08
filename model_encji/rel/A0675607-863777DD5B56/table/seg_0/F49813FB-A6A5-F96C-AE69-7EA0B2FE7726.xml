@@ -31,22 +31,6 @@
 <ownDataTypeParameters>32,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="User_user_id" id="022AB8F9-8E1B-131A-BA6E-D289623AB78D">
-<createdBy>MatJonne</createdBy>
-<createdTime>2020-12-13 20:55:54 UTC</createdTime>
-<generatorID>B49E2F05-1B5C-F174-495B-18E868D3384B</generatorID>
-<ownerDesignName>model_encji</ownerDesignName>
-<nullsAllowed>true</nullsAllowed>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT011</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<previousColumn>false</previousColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<associations>
-<colAssociation fkAssociation="4DCFB1A6-1EEF-A063-6B0D-214285F21142" referredColumn="B30CBA64-3076-3466-A447-FA625B886CAF"/>
-</associations>
-</Column>
 </columns>
 <indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
 <ind_PK_UK id="21F3CEAD-C74B-9E6A-FFC0-B706C02EFB0B" name="Composite_PK">
@@ -59,17 +43,6 @@
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="752EC7C1-B0BE-EF5A-A35F-589ECF371B74"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="4D112630-2057-E5B7-5D9B-74C6514E05DA" name="Composite_User_FK">
-<createdBy>MatJonne</createdBy>
-<createdTime>2020-12-13 20:55:54 UTC</createdTime>
-<generatorID>9C9344A9-2419-3387-653B-A80F880E4E43</generatorID>
-<ownerDesignName>model_encji</ownerDesignName>
-<indexState>Foreign Key</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="022AB8F9-8E1B-131A-BA6E-D289623AB78D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>
