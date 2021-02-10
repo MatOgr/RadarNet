@@ -188,3 +188,52 @@ ALTER TABLE relation_composite_user
 ALTER TABLE relation_composite_user
     ADD CONSTRAINT relation_c_u_user_fk FOREIGN KEY ( user_rel_id )
         REFERENCES Radar_users ( user_id );
+
+
+-- Triggers
+CREATE OR REPLACE TRIGGER ProductCheck
+    BEFORE INSERT OR UPDATE ON Products
+DECLARE 
+    vError BOOLEAN;
+    exInvalidCombination EXCEPTION;
+BEGIN
+    vError := 1;
+    CASE 
+        -- 3D or CMAX or VIL
+        WHEN (NEW.product_type IN ('3D', 'CMAX', 'VIL')) THEN
+            IF( :NEW.hmin IS NOT NULL AND
+                :NEW.hmax IS NOT NULL AND ( 
+                    (:NEW.product_type = "VIL" AND :NEW.zr_relation IS NOT NULL ) 
+                    OR
+                    (:NEW.product_type <> "VIL" AND :NEW.zr_relation IS NULL)) AND
+                :NEW.height IS NULL AND 
+                :NEW.r_min IS NULL AND
+                :NEW.r_max IS NULL AND
+                :NEW.posangle IS NULL) THEN vError:=0;
+            END IF;
+        -- PCAPPI or CAPPI
+        WHEN (NEW.product_type IN ('PCAPPI', 'CAPPI')) THEN
+            IF( :NEW.hmin IS NULL AND
+                :NEW.hmax IS NULL AND
+                :NEW.height IS NOT NULL AND
+                :NEW.zr_relation IS NULL AND (
+                    ( :NEW.product_type = "CAPPI" AND :NEW.r_min IS NOT NULL AND :NEW.r_max IS NOT NULL )
+                    OR 
+                    ( :NEW.product_type = "PCAPPI" AND :NEW.r_min IS NULL AND :NEW.r_max IS NULL)) AND
+                :NEW.posangle IS NULL ) THEN vError := 0;
+            END IF;
+        -- PPI
+        WHEN(NEW.product_type = "PPI" AND
+            NEW.hmin IS NULL AND
+            NEW.hmax IS NULL AND 
+            NEW.zr_relation IS NULL AND
+            NEW.height IS NULL AND 
+            NEW.r_min IS NULL AND
+            NEW.r_max IS NULL AND
+            NEW.posangle IS NOT NULL) THEN vError := 0;
+    END CASE;
+
+    IF vError = 1 THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Invalid data for the chosen product type!');
+    END IF;
+END;
