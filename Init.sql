@@ -241,7 +241,6 @@ END;
 CREATE OR REPLACE TRIGGER ImageCheck
     BEFORE INSERT OR UPDATE ON Images
 DECLARE
-    vError BOOLEAN;
 BEGIN
     IF( (:NEW.composite_made_id IS NULL AND :NEW.product_made_id IS NULL)
         OR
