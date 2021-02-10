@@ -1,7 +1,7 @@
 CREATE TABLE Organisations(
     organisation_id integer not null,
     organisation_name varchar2(100) not null,
-    attribution clob,
+    attribution varchar2(255),
     org_url varchar2(255),
     logo_url varchar2(255)
 );
@@ -109,7 +109,7 @@ CREATE TABLE Products (
 
 ALTER TABLE Products
     ADD CONSTRAINT ch_inh_product 
-        CHECK ( hmin IN ( 3d, cappi, cmax, pcappi, ppi, vil ) );
+        CHECK ( product_type IN ( '3D', 'CAPPI', 'CMAX', 'PCAPPI', 'PPI', 'VIL' ) );
 ALTER TABLE Products 
     ADD CONSTRAINT product_pk PRIMARY KEY ( product_id );
 ALTER TABLE Products
@@ -141,24 +141,24 @@ ALTER TABLE Scales
     ADD CONSTRAINT scale_pk PRIMARY KEY ( scale_id );
 
 
-CREATE TABLE Scan_images (
-    scan_image_id           INTEGER NOT NULL,
-    scan_image_url          VARCHAR2(255) NOT NULL,
+CREATE TABLE Images (
+    image_id                INTEGER NOT NULL,
+    image_url               VARCHAR2(255) NOT NULL,
     resolution              INTEGER NOT NULL,
     scale_used_id           INTEGER NOT NULL,
     composite_made_id       INTEGER,
     product_made_id         INTEGER
 );
-ALTER TABLE Scan_images 
-    ADD CONSTRAINT scan_image_pk PRIMARY KEY ( scan_image_id );
-ALTER TABLE Scan_images
-    ADD CONSTRAINT scan_image_composite_fk FOREIGN KEY ( composite_made_id )
+ALTER TABLE Images 
+    ADD CONSTRAINT image_pk PRIMARY KEY ( image_id );
+ALTER TABLE Images
+    ADD CONSTRAINT image_composite_fk FOREIGN KEY ( composite_made_id )
         REFERENCES Composites ( composite_id );
-ALTER TABLE Scan_images
-    ADD CONSTRAINT scan_image_product_fk FOREIGN KEY ( product_made_id )
+ALTER TABLE Images
+    ADD CONSTRAINT image_product_fk FOREIGN KEY ( product_made_id )
         REFERENCES Products ( product_id );
-ALTER TABLE Scan_images
-    ADD CONSTRAINT scan_image_scale_fk FOREIGN KEY ( scale_used_id )
+ALTER TABLE Images
+    ADD CONSTRAINT image_scale_fk FOREIGN KEY ( scale_used_id )
         REFERENCES Scales ( scale_id );
 
 
@@ -195,7 +195,6 @@ CREATE OR REPLACE TRIGGER ProductCheck
     BEFORE INSERT OR UPDATE ON Products
 DECLARE 
     vError BOOLEAN;
-    exInvalidCombination EXCEPTION;
 BEGIN
     vError := 1;
     CASE 
@@ -235,5 +234,18 @@ BEGIN
 
     IF vError = 1 THEN
         RAISE_APPLICATION_ERROR(-20001, 'Invalid data for the chosen product type!');
+    END IF;
+END;
+
+
+CREATE OR REPLACE TRIGGER ImageCheck
+    BEFORE INSERT OR UPDATE ON Images
+DECLARE
+    vError BOOLEAN;
+BEGIN
+    IF( (:NEW.composite_made_id IS NULL AND :NEW.product_made_id IS NULL)
+        OR
+        (:NEW.composite_made_id IS NOT NULL AND :NEW.product_made_id IS NOT NULL)) THEN
+        RAISE_APPLICATION_ERROR(-20001, 'Exactly one type of image source can be chosen - neither less nor more!');
     END IF;
 END;
