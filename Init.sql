@@ -1,3 +1,17 @@
+--DROP TABLE Organisations;
+--DROP TABLE Networks;
+--DROP TABLE Radars;
+--DROP TABLE Scans;
+--DROP TABLE Volumes;
+--DROP TABLE Radar_users;
+--DROP TABLE Products;
+--DROP TABLE Composites;
+--DROP TABLE Scales;
+--DROP TABLE Images;
+--DROP TABLE relation_product_user;
+--DROP TABLE relation_composite_user;
+/
+
 CREATE TABLE Organisations(
     organisation_id integer not null,
     organisation_name varchar2(100) not null,
@@ -6,7 +20,7 @@ CREATE TABLE Organisations(
     logo_url varchar2(255)
 );
 ALTER TABLE Organisations 
-    ADD CONSTRAINT org_pk PRIMARY KEY (org_id);
+    ADD CONSTRAINT org_pk PRIMARY KEY (organisation_id);
 
 
 CREATE TABLE Networks(
@@ -107,6 +121,15 @@ CREATE TABLE Products (
     posangle                FLOAT
 );
 
+
+
+CREATE TABLE Composites (
+    composite_id  INTEGER NOT NULL,
+    merge_type    VARCHAR2(32) NOT NULL
+);
+ALTER TABLE Composites 
+    ADD CONSTRAINT composite_pk PRIMARY KEY ( composite_id );
+    
 ALTER TABLE Products
     ADD CONSTRAINT ch_inh_product 
         CHECK ( product_type IN ( '3D', 'CAPPI', 'CMAX', 'PCAPPI', 'PPI', 'VIL' ) );
@@ -122,13 +145,6 @@ ALTER TABLE Products
     ADD CONSTRAINT product_scan_fk FOREIGN KEY ( scan_used_id )
         REFERENCES Scans ( scan_id );
 
-
-CREATE TABLE Composites (
-    composite_id  INTEGER NOT NULL,
-    merge_type    VARCHAR2(32) NOT NULL
-);
-ALTER TABLE Composites 
-    ADD CONSTRAINT composite_pk PRIMARY KEY ( composite_id );
 
 
 CREATE TABLE Scales (
@@ -193,54 +209,54 @@ ALTER TABLE relation_composite_user
 -- Triggers
 CREATE OR REPLACE TRIGGER ProductCheck
     BEFORE INSERT OR UPDATE ON Products
+    FOR EACH ROW
 DECLARE 
     vError BOOLEAN;
 BEGIN
-    vError := 1;
+    vError := TRUE;
     CASE 
         -- 3D or CMAX or VIL
-        WHEN (NEW.product_type IN ('3D', 'CMAX', 'VIL')) THEN
-            IF( :NEW.hmin IS NOT NULL AND
-                :NEW.hmax IS NOT NULL AND ( 
-                    (:NEW.product_type = "VIL" AND :NEW.zr_relation IS NOT NULL ) 
-                    OR
-                    (:NEW.product_type <> "VIL" AND :NEW.zr_relation IS NULL)) AND
-                :NEW.height IS NULL AND 
-                :NEW.r_min IS NULL AND
-                :NEW.r_max IS NULL AND
-                :NEW.posangle IS NULL) THEN vError:=0;
-            END IF;
+        WHEN (:NEW.product_type IN ('3D', 'CMAX', 'VIL') AND
+            :NEW.hmin IS NOT NULL AND
+            :NEW.hmax IS NOT NULL AND ( 
+                (:NEW.product_type = 'VIL' AND :NEW.zr_relation IS NOT NULL ) 
+                OR
+                (:NEW.product_type <> 'VIL' AND :NEW.zr_relation IS NULL)) AND
+            :NEW.height IS NULL AND 
+            :NEW.r_min IS NULL AND
+            :NEW.r_max IS NULL AND
+            :NEW.posangle IS NULL) THEN vError:=FALSE;
         -- PCAPPI or CAPPI
-        WHEN (NEW.product_type IN ('PCAPPI', 'CAPPI')) THEN
-            IF( :NEW.hmin IS NULL AND
-                :NEW.hmax IS NULL AND
-                :NEW.height IS NOT NULL AND
-                :NEW.zr_relation IS NULL AND (
-                    ( :NEW.product_type = "CAPPI" AND :NEW.r_min IS NOT NULL AND :NEW.r_max IS NOT NULL )
-                    OR 
-                    ( :NEW.product_type = "PCAPPI" AND :NEW.r_min IS NULL AND :NEW.r_max IS NULL)) AND
-                :NEW.posangle IS NULL ) THEN vError := 0;
-            END IF;
+        WHEN (:NEW.product_type IN ('PCAPPI', 'CAPPI') AND
+            :NEW.hmin IS NULL AND
+            :NEW.hmax IS NULL AND
+            :NEW.height IS NOT NULL AND
+            :NEW.zr_relation IS NULL AND (
+                ( :NEW.product_type = 'CAPPI' AND :NEW.r_min IS NOT NULL AND :NEW.r_max IS NOT NULL )
+                OR 
+                ( :NEW.product_type = 'PCAPPI' AND :NEW.r_min IS NULL AND :NEW.r_max IS NULL)) AND
+            :NEW.posangle IS NULL ) THEN vError := FALSE;
+
         -- PPI
-        WHEN(NEW.product_type = "PPI" AND
-            NEW.hmin IS NULL AND
-            NEW.hmax IS NULL AND 
-            NEW.zr_relation IS NULL AND
-            NEW.height IS NULL AND 
-            NEW.r_min IS NULL AND
-            NEW.r_max IS NULL AND
-            NEW.posangle IS NOT NULL) THEN vError := 0;
+        WHEN(:NEW.product_type = 'PPI' AND
+            :NEW.hmin IS NULL AND
+            :NEW.hmax IS NULL AND 
+            :NEW.zr_relation IS NULL AND
+            :NEW.height IS NULL AND 
+            :NEW.r_min IS NULL AND
+            :NEW.r_max IS NULL AND
+            :NEW.posangle IS NOT NULL) THEN vError := FALSE;
     END CASE;
 
-    IF vError = 1 THEN
+    IF vError THEN
         RAISE_APPLICATION_ERROR(-20001, 'Invalid data for the chosen product type!');
     END IF;
 END;
-
+/
 
 CREATE OR REPLACE TRIGGER ImageCheck
     BEFORE INSERT OR UPDATE ON Images
-DECLARE
+    FOR EACH ROW
 BEGIN
     IF( (:NEW.composite_made_id IS NULL AND :NEW.product_made_id IS NULL)
         OR
@@ -248,3 +264,4 @@ BEGIN
         RAISE_APPLICATION_ERROR(-20001, 'Exactly one type of image source can be chosen - neither less nor more!');
     END IF;
 END;
+/
