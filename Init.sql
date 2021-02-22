@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 --DROP TABLE Organisations;
 --DROP TABLE Networks;
 --DROP TABLE Radars;
@@ -11,7 +10,7 @@
 --DROP TABLE Images;
 --DROP TABLE relation_product_user;
 --DROP TABLE relation_composite_user;
-/
+
 
 CREATE TABLE Organisations(
     organisation_id integer not null,
@@ -266,7 +265,7 @@ BEGIN
     END IF;
 END;
 /
-=======
+
 CREATE TABLE Organisations(
     organisation_id integer not null,
     organisation_name varchar2(100) not null,
@@ -516,4 +515,6 @@ BEGIN
         RAISE_APPLICATION_ERROR(-20001, 'Exactly one type of image source can be chosen - neither less nor more!');
     END IF;
 END;
->>>>>>> a96741d00884df1cba3e46ee735fe91e75a49e5f
+
+CREATE INDEX date_radarid_idx ON Volumes(creation_date, radar_used_id);
+CREATE BITMAP INDEX product_type_btmidx ON Products(product_type);
