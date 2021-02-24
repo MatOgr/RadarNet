@@ -213,7 +213,6 @@ CREATE OR REPLACE TRIGGER ProductCheck
 DECLARE 
     vError BOOLEAN;
 BEGIN
-    vError := TRUE;
     CASE 
         -- 3D or CMAX or VIL
         WHEN (:NEW.product_type IN ('3D', 'CMAX', 'VIL') AND
