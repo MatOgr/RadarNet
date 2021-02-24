@@ -246,6 +246,9 @@ BEGIN
             :NEW.r_min IS NULL AND
             :NEW.r_max IS NULL AND
             :NEW.posangle IS NOT NULL) THEN vError := FALSE;
+            
+        -- INAPPROPRIATE DATA
+        ELSE vError := TRUE;
     END CASE;
 
     IF vError THEN
