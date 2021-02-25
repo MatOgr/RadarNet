@@ -1,0 +1,99 @@
+th{
+  background-color: rgb(160, 160, 160);
+}
+
+table{
+  width: 100%;
+  border-spacing: 0;
+  border-collapse: collapse;
+  background-color: silver;
+}
+
+td, th{
+  padding: 10px;
+  border: 1px solid #636363;
+}
+
+tbody tr:hover{
+  background-color: rgba(109, 209, 255, 0.705);
+}
+
+tbody tr {
+  background-color: white;
+}
+
+.root{
+  height: 100%;
+  width: 100%;
+}
+
+.App{
+  height: 100vh;
+}
+
+.header{
+  display: block;
+  width: 100%;
+  height: 20%;
+  background-color: silver;
+}
+
+.tableDiv{
+  width: 100%;
+  height: 80%;
+  overflow: scroll;
+}
+
+.window{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.window-content{
+  height: fit-content;
+  padding-bottom: 10px;
+  width: 100%;
+  display: block;
+}
+
+option[value=""][disabled]{
+  display: none;
+}
+
+label{
+  margin-right: 8px;
+}
+
+.input-wrapper{
+  padding-bottom: 5px;
+}
+
+input[type="text"]{
+  width: 60px;
+}
+
+.input-wrapper > label {
+  width: 60px;
+}
+
+#staggerprf-label{
+  width: fit-content;
+}
+
+.dtype-selector-wrapper{
+  width: 33%;
+  margin-right: 0;
+}
+
+button{
+  margin: 2px;
+}
+
+thead{
+  background-color: silver;
+}
+
+thead:hover{
+  background-color: silver;
+}
